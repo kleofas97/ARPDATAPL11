@@ -59,8 +59,8 @@ class Calculator:
         self.number_of_operation += 1
         Calculator.number_of_operation_in_all_cals += 1
 
-
-calc = Calculator(5, 6)
-calc.a = 'text'
-print(calc.a)
-print(calc.get_sum())
+if __name__ == "__main__":
+    calc = Calculator(5, 6)
+    calc.a = 'text'
+    print(calc.a)
+    print(calc.get_sum())
