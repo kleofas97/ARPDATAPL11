@@ -51,7 +51,7 @@ class Calculator:
         self.add_counters()
         return self._a * self._b
 
-    def def_divide(self):
+    def get_divide(self):
         self.add_counters()
         return self._a / self._b
 
