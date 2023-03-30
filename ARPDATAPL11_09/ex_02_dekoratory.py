@@ -1,5 +1,8 @@
 import time
 
+# Dekoratory - wrappery wokół funkcji.
+# najlpeszy przyklad - bez integracji w funkcje możemy zmierzyc czas jej wywolania
+# otaczajac ją wrapperem
 
 def timer(func):
     def wrap_function(*args, **kwargs):
