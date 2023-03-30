@@ -14,4 +14,11 @@ def hide_password(password: str) -> str:
     :param password: haslo z gwiazdkami co trzecia litere.
     :return: napis z czesciowo ukrytym haslem.
     """
-    pass
+    new_password = ''
+
+    for index, litera in enumerate(password):
+        if (index + 1) % 3 == 0:  # tez pasuje index % 3 == 2
+            new_password += '*'
+        else:
+            new_password += litera
+    return new_password
